@@ -1,0 +1,130 @@
+@import "variables.scss";
+@import "footer.scss";
+@import "index.scss";
+
+/*mapget*/
+.barraSeccionMujer{
+    background-color: map-get($barraSeccionMujer , color );
+    opacity: map-get($barraSeccionMujer , opacidad );
+    margin-top: map-get($barraSeccionMujer , margensuperior )
+}
+
+
+
+.cardsMujer{
+    .btn-primary{
+        background-color:rgb(209, 92, 233);
+        --bs-btn-hover-bg: rgb(212, 130, 228);
+        --bs-btn-border-color:rgb(209, 92, 233);
+        --bs-btn-hover-border-color:rgb(34, 33, 33);
+        --bs-btn-focus-shadow-rgb: none;
+        --bs-btn-active-bg: none;
+        --bs-btn-active-border-color: none;
+    }
+}
+
+.cardsHombre{
+    .btn-primary{
+        background-color:rgb(18, 105, 206);
+        --bs-btn-hover-bg: rgb(28, 114, 212);
+        --bs-btn-border-color:rgb(18, 105, 206);
+        --bs-btn-hover-border-color: rgb(34, 33, 33);
+        --bs-btn-focus-shadow-rgb: none;
+        --bs-btn-active-bg: none;
+        --bs-btn-active-border-color: none;
+    }
+}
+
+.cardsMujer{
+    .card{
+        background-color: $colorBgCardMujer
+    }
+}
+
+.cardsHombre{
+    .card{
+        background-color: $colorBgCardHombre;
+    }
+}
+
+
+/* extend */
+.barraQuienesSomos{
+    @extend .barraSeccionMujer;
+    background-color: $colorPrimario;
+}
+
+
+/*mixin*/
+
+@mixin PropiedadesCasillasInput ($ancho,$padding,$margin){
+    width: $ancho;
+    padding: $padding;
+    margin:$margin;
+}
+
+
+.input-group{
+    @include PropiedadesCasillasInput(300px,0,10px )
+
+}
+.input-group.newsletter{
+    @include PropiedadesCasillasInput(300px,0,10px );
+    background-color: $colorTonalidadLogo;
+    height: 38px;
+}
+@media screen and (max-width: 420px){
+    .input-group.newsletter{
+        @include PropiedadesCasillasInput(200px,0,0px );
+    }
+}
+
+.formularioContacto{
+    margin: 0;
+}
+
+.barraSeccionHombre{
+    @extend .barraSeccionMujer;
+    background-color: $colorBgBannerHombre;
+
+}
+
+.formularioContacto{
+    .btn-primary{
+        background-color: $colorTonalidadLogo;
+        --bs-btn-border-color: $colorTonalidadLogo;
+    }
+}
+
+
+
+/* tamaño Iframe manual general */
+.iframeQuienesSomos {
+    width: 100px;
+    height: 50px;
+}
+  /*pantallas de 300px o superior */
+@media (min-width: 300px) {
+
+    .iframeQuienesSomos {
+        width: 150px;
+        height: 110px;
+    } 
+}
+  /*pantallas de 320px o superior */
+@media (min-width: 320px) {
+
+    .iframeQuienesSomos {
+        width: 250px;
+        height: 190px;
+    } 
+}
+  /*pantallas 768px o superior */
+@media (min-width: 768px) {
+
+    .iframeQuienesSomos {
+        width: 500px;
+        height: 350px;
+    } 
+
+}

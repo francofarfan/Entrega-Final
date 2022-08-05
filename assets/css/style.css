@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/*map*/
+footer {
+  background-color: rgb(248, 249, 250);
+}
+
+.ImgLogoFooter {
+  width: 80px;
+}
+
+.redesSociales a {
+  text-decoration: none;
+  color: #212529;
+}
+
+@media screen and (max-width: 622px) {
+  .logoEnFooter {
+    display: none;
+  }
+}
+.redesSociales ul li {
+  list-style: none;
+}
+
+.navbar-brand .ImgNavBar {
+  width: 60px;
+  height: 45px;
+  display: flex inline-block;
+}
+
+/*mapget*/
+.barraSeccionMujer, .barraSeccionHombre, .barraQuienesSomos {
+  background-color: rgba(255, 0, 212, 0.1098039216);
+  opacity: 60%;
+  margin-top: 20px;
+}
+
+
+/* personalizacion de bootstrap*/
+.cardsMujer .btn-primary {
+  background-color: rgb(209, 92, 233);
+  --bs-btn-hover-bg: rgb(212, 130, 228);
+  --bs-btn-border-color:rgb(209, 92, 233);
+  --bs-btn-hover-border-color:rgb(34, 33, 33);
+  --bs-btn-focus-shadow-rgb: none;
+  --bs-btn-active-bg: none;
+  --bs-btn-active-border-color: none;
+}
+
+.cardsHombre .btn-primary {
+  background-color: rgb(18, 105, 206);
+  --bs-btn-hover-bg: rgb(28, 114, 212);
+  --bs-btn-border-color:rgb(18, 105, 206);
+  --bs-btn-hover-border-color: rgb(34, 33, 33);
+  --bs-btn-focus-shadow-rgb: none;
+  --bs-btn-active-bg: none;
+  --bs-btn-active-border-color: none;
+}
+
+.cardsMujer .card {
+  background-color: rgba(255, 0, 212, 0.1098039216);
+}
+
+.cardsHombre .card {
+  background-color: rgba(106, 145, 255, 0.7098039216);
+}
+
+/* extend */
+.barraQuienesSomos {
+  background-color: rgb(248, 249, 250);
+}
+
+/*mixin*/
+.input-group {
+  width: 300px;
+  padding: 0;
+  margin: 10px;
+}
+
+.input-group.newsletter {
+  width: 300px;
+  padding: 0;
+  margin: 10px;
+  background-color: #34bba4;
+  height: 38px;
+}
+
+@media screen and (max-width: 420px) {
+  .input-group.newsletter {
+    width: 200px;
+    padding: 0;
+    margin: 0px;
+  }
+}
+.formularioContacto {
+  margin: 0;
+}
+
+.barraSeccionHombre {
+  background-color: rgb(106, 145, 255);
+}
+
+.formularioContacto .btn-primary {
+  background-color: #34bba4;
+  --bs-btn-border-color: $colorTonalidadLogo;
+}
+
+/* tamaño Iframe manual general */
+.iframeQuienesSomos {
+  width: 100px;
+  height: 50px;
+}
+
+/*pantallas de 300px o superior */
+@media (min-width: 300px) {
+  .iframeQuienesSomos {
+    width: 150px;
+    height: 110px;
+  }
+}
+/*pantallas de 320px o superior */
+@media (min-width: 320px) {
+  .iframeQuienesSomos {
+    width: 250px;
+    height: 190px;
+  }
+}
+/*pantallas 768px o superior */
+@media (min-width: 768px) {
+  .iframeQuienesSomos {
+    width: 500px;
+    height: 350px;
+  }
+}/*# sourceMappingURL=style.css.map */

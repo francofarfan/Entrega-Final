@@ -1,0 +1,29 @@
+footer{
+    background-color: $colorPrimario;
+}
+.ImgLogoFooter{
+    width: 80px;
+}
+
+.redesSociales {
+    
+    a{
+        text-decoration: none;
+        color: $colortxtFooter
+    }
+}
+
+@media screen and (max-width: 622px){
+    .logoEnFooter{
+        display: none;
+    }
+}
+
+.redesSociales{
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+}
+
